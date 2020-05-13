@@ -22,8 +22,22 @@ module.exports = {
             },
             {
                 test: /\.s(a|c)ss$/,
-                loader: ['style-loader', 'css-loader', 'sass-loader']
-            }
+                use: [
+                    {
+                        loader: 'style-loader',
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 2,
+                            modules: { auto: true },
+                        },
+                    },
+                    {
+                        loader: 'sass-loader',
+                    },
+                ],
+            },           
         ]
     },
     devServer: {

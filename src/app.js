@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-// import './style.scss';
+import './module.scss'
+
+
+import Header from '../src/components/Header';
 
 
 class App extends Component {
+     constructor(props) {
+         super(props);
+     }
+
     render() { 
         return (
-            <div>Hello World</div>
+            <Header />
         );
     }
 }
