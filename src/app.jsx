@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import "./module.scss";
 
 import Header from "./components/Header";
+import WeekDays from './components/WeekDays';
 
 class App extends Component {
   constructor(props) {
@@ -14,7 +15,10 @@ class App extends Component {
   render() {
     
     return (
-        <Header />
+        <React.Fragment>
+          <Header />
+          <WeekDays />
+        </React.Fragment>
     )
 
   }
