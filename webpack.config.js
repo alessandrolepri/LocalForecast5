@@ -18,7 +18,8 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                loader: ['style-loader', 'css-loader']
+                loader: ['style-loader', 'css-loader'],
+                import: true
             },
             {
                 test: /\.s(a|c)ss$/,
