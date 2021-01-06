@@ -42,7 +42,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "devDependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "file-loader": "^6.0.0",
     "heroku": "^7.41.1",
     "react": "^16.13.1",
